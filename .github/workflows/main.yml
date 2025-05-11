@@ -9,7 +9,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: build image
-        run: docker build ./ -t 24012008/hospital-management:latest
+        run: docker build Hospital.Patients/ -t 24012008/hospital-management:latest
       - name: push image to docker hub
         run: |
           docker push 24012008/hospital-management:latest
